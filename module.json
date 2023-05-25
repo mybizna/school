@@ -1,0 +1,13 @@
+{
+    "name": "School",
+    "alias": "school",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
