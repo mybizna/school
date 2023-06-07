@@ -8,15 +8,15 @@ The School Management System is a vital part of the MyBizna ERP suite, which aim
 ## Features
 The School Management System offers the following key features:
 
- - *Learner Management:* This feature allows administrators to maintain learner records, including personal information, contact details, academic performance, attendance, and disciplinary actions.
+ - **Learner Management:** This feature allows administrators to maintain learner records, including personal information, contact details, academic performance, attendance, and disciplinary actions.
 
- - Grade Management: The system enables administrators to create and manage grade structures, including grade levels, sections, and class rosters. It facilitates the assignment of learners to specific classes and provides tools for tracking attendance and managing class schedules.
+ - **Grade Management:** The system enables administrators to create and manage grade structures, including grade levels, sections, and class rosters. It facilitates the assignment of learners to specific classes and provides tools for tracking attendance and managing class schedules.
 
- - Subject Management: Administrators can define and manage subjects offered in the school curriculum. They can assign subjects to specific grades or classes, set subject prerequisites, and track learner enrollment in various subjects.
+ - **Subject Management:** Administrators can define and manage subjects offered in the school curriculum. They can assign subjects to specific grades or classes, set subject prerequisites, and track learner enrollment in various subjects.
 
- - Class-Year Management: The Class-Year component organizes learners into academic years or sessions, allowing administrators to track learner progress over time. It provides a hierarchical structure for managing learners, grades, and subjects.
+ - **Class-Year Management:** The Class-Year component organizes learners into academic years or sessions, allowing administrators to track learner progress over time. It provides a hierarchical structure for managing learners, grades, and subjects.
 
- - Grade-Subject Management: This feature enables administrators to define grade-specific subjects and their associated requirements, such as textbooks, lesson plans, and assessment criteria. It helps ensure consistent subject offerings across different grades.
+ - **Grade-Subject Management:** This feature enables administrators to define grade-specific subjects and their associated requirements, such as textbooks, lesson plans, and assessment criteria. It helps ensure consistent subject offerings across different grades.
 
  ```
 School
