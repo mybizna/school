@@ -18,6 +18,7 @@ The School Management System offers the following key features:
 
  - Grade-Subject Management: This feature enables administrators to define grade-specific subjects and their associated requirements, such as textbooks, lesson plans, and assessment criteria. It helps ensure consistent subject offerings across different grades.
 
+ ```
 School
    |
    |
@@ -25,6 +26,7 @@ School
    |                    |   |                    |  
    |                    |   |                    |              
    ----- ClassYear ------   ---- GradeSubject ----
+ ```
 
 ## Requirements
 Mybizna ERP version 1.0 or above
