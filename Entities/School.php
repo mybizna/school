@@ -47,7 +47,7 @@ class School extends BaseModel
         // listing view fields
         $fields = new ListTable();
 
-        $fields->name('name')->type('text')->ordering(true);
+        $fields->name('name')->html('text')->ordering(true);
 
         return $fields;
 
@@ -65,7 +65,7 @@ class School extends BaseModel
         // listing view fields
         $fields = new FormBuilder();
 
-        $fields->name('name')->type('text')->group('w-1/2');
+        $fields->name('name')->html('text')->group('w-1/2');
 
         return $fields;
 
@@ -82,7 +82,7 @@ class School extends BaseModel
         // listing view fields
         $fields = new FormBuilder();
 
-        $fields->name('name')->type('text')->group('w-1/6');
+        $fields->name('name')->html('text')->group('w-1/6');
 
         return $fields;
 
@@ -95,8 +95,8 @@ class School extends BaseModel
      */
     public function migration(Blueprint $table): void
     {
-        $table->increments('id');
-        $table->string('name');
-        $table->string('description');
+        $this->fields->increments('id');
+        $this->fields->string('name');
+        $this->fields->string('description');
     }
 }
