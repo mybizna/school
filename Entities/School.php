@@ -12,7 +12,7 @@ class School extends BaseModel
      *
      * @var array<string>
      */
-    protected $fillable = ['name'];
+    protected $fillable = ['name', 'description', 'published'];
 
     /**
      * The fields that are to be render when performing relationship queries.
@@ -41,12 +41,26 @@ class School extends BaseModel
      * @param Blueprint $table
      * @return void
      */
-    public function fields(Blueprint $table): void
+    public function fields(Blueprint $table = null): void
     {
         $this->fields = $table ?? new Blueprint($this->table);
-        
+
         $this->fields->increments('id')->html('text');
         $this->fields->string('name')->html('text');
         $this->fields->string('description')->html('textarea');
+        $this->fields->string('published')->html('switch');
+    }
+
+    /**
+     * List of structure for this model.
+     */
+    public function structure($structure): array
+    {
+        $structure = [
+            'table' => ['name', 'published'],
+            'filter' => ['name', 'published'],
+        ];
+
+        return $structure;
     }
 }
