@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('school_subject', function (Blueprint $table) {
             $table->id();
+
+            $table->string('name');
+            $table->string('description');
+            $table->string('published');
             
             $table->timestamps();
         });
