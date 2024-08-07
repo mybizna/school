@@ -29,7 +29,7 @@ School
  ```
 
 ## Requirements
-Mybizna ERP version 1.0 or above
+Mybizna ERP version 2024.1 or above
 
 ## Support
 If you have any questions or need assistance, please contact our support team. We're always happy to help!
