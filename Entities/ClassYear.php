@@ -1,8 +1,8 @@
 <?php
 
-namespace Modules\School\Entities;
+namespace Modules\School\Models;
 
-use Modules\Base\Entities\BaseModel;
+use Modules\Base\Models\BaseModel;
 
 class ClassYear extends BaseModel
 {

@@ -1,9 +1,8 @@
 <?php
 
-namespace Modules\School\Entities;
+namespace Modules\School\Models;
 
-use Illuminate\Database\Schema\Blueprint;
-use Modules\Base\Entities\BaseModel;
+use Modules\Base\Models\BaseModel;
 
 class Subject extends BaseModel
 {
@@ -20,9 +19,5 @@ class Subject extends BaseModel
      * @var string
      */
     protected $table = "school_subject";
-
-
-
-
 
 }
