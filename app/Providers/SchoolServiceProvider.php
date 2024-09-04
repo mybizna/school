@@ -9,7 +9,7 @@ class SchoolServiceProvider extends ServiceProvider
 {
     protected string $moduleName = 'School';
 
-    protected string $moduleNameLower = 'School';
+    protected string $moduleNameLower = 'school';
 
     /**
      * Boot the application events.

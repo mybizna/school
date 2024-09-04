@@ -2,20 +2,22 @@
 
 namespace Modules\School\Filament\Resources;
 
-use Modules\School\Filament\Resources\SchoolResource\Pages;
-use Modules\School\Filament\Resources\SchoolResource\RelationManagers;
-use Modules\School\Models\School;
-use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Modules\School\Filament\Resources\SchoolResource\Pages;
+use Modules\School\Models\School;
 
 class SchoolResource extends Resource
 {
     protected static ?string $model = School::class;
+
+    protected static ?string $slug = 'school/school';
+
+    protected static ?string $navigationGroup = 'School';
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 

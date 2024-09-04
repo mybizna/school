@@ -2,9 +2,6 @@
 
 namespace Modules\School\Filament\Resources;
 
-use Modules\School\Filament\Resources\SubjectResource\Pages;
-use Modules\School\Filament\Resources\SubjectResource\RelationManagers;
-use Modules\School\Models\Subject;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -12,10 +9,16 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Modules\School\Filament\Resources\SubjectResource\Pages;
+use Modules\School\Models\Subject;
 
 class SubjectResource extends Resource
 {
     protected static ?string $model = Subject::class;
+
+    protected static ?string $slug = 'school/subject';
+
+    protected static ?string $navigationGroup = 'School';
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
