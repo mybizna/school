@@ -18,6 +18,6 @@ class School extends BaseModel
      *
      * @var string
      */
-    protected $table = "school";
+    protected $table = "school_school";
 
 }
