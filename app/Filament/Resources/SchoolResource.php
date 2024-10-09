@@ -3,15 +3,12 @@
 namespace Modules\School\Filament\Resources;
 
 use Filament\Forms\Form;
-use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
-use Modules\School\Filament\Resources\SchoolResource\Pages;
+use Modules\Base\Filament\Resources\BaseResource;
 use Modules\School\Models\School;
 
-class SchoolResource extends Resource
+class SchoolResource extends BaseResource
 {
     protected static ?string $model = School::class;
 
@@ -50,27 +47,4 @@ class SchoolResource extends Resource
             ]);
     }
 
-    public static function getRelations(): array
-    {
-        return [
-            //
-        ];
-    }
-
-    public static function getPages(): array
-    {
-        return [
-            'index' => Pages\ListSchools::route('/'),
-            'create' => Pages\CreateSchool::route('/create'),
-            'edit' => Pages\EditSchool::route('/{record}/edit'),
-        ];
-    }
-
-    public static function getEloquentQuery(): Builder
-    {
-        return parent::getEloquentQuery()
-            ->withoutGlobalScopes([
-                SoftDeletingScope::class,
-            ]);
-    }
 }
