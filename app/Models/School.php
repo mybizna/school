@@ -24,7 +24,7 @@ class School extends BaseModel
 
     public function migration(Blueprint $table): void
     {
-        $table->id();
+
 
         $table->string('name');
         $table->string('description');
