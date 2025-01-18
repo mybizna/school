@@ -3,6 +3,7 @@
 namespace Modules\School\Models;
 
 use Modules\Base\Models\BaseModel;
+use Illuminate\Database\Schema\Blueprint;
 
 class ClassYear extends BaseModel
 {
@@ -20,4 +21,14 @@ class ClassYear extends BaseModel
      */
     protected $table = "school_class_year";
 
+
+    public function migration(Blueprint $table): void
+    {
+        $table->id();
+
+        $table->string('name');
+        $table->string('description');
+        $table->string('published');
+
+    }
 }
